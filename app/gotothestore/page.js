@@ -1,0 +1,61 @@
+import Image from 'next/image'
+
+export default function GoToTheStore() {
+  return (
+    <div className="voucher-container">
+      <div className="voucher-content">
+        <Image
+          src="/voucher.png"
+          alt="Voucher"
+          width={800}
+          height={600}
+          priority
+          className="voucher-image"
+        />
+      </div>
+      
+      <style jsx>{`
+        .voucher-container {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          background: #F7E9D2;
+          background: linear-gradient(135deg, rgba(247, 233, 210, 1) 4%, rgba(145, 32, 36, 1) 4%, rgba(145, 32, 36, 1) 8%, rgba(247, 233, 210, 1) 8%, rgba(247, 233, 210, 1) 12%, rgba(240, 181, 46, 1) 12%, rgba(240, 181, 46, 1) 16%, rgba(247, 233, 210, 1) 16%, rgba(247, 233, 210, 1) 20%, rgba(132, 33, 36, 1) 20%, rgba(132, 33, 36, 1) 24%, rgba(247, 233, 210, 1) 24%, rgba(247, 233, 210, 1) 28%, rgba(101, 25, 33, 1) 28%, rgba(101, 25, 33, 1) 32%, rgba(247, 233, 210, 1) 32%, rgba(247, 233, 210, 1) 36%, rgba(240, 181, 46, 1) 36%, rgba(240, 181, 46, 1) 40%, rgba(247, 233, 210, 1) 40%, rgba(247, 233, 210, 1) 44%, rgba(132, 33, 36, 1) 44%, rgba(132, 33, 36, 1) 48%, rgba(247, 233, 210, 1) 48%, rgba(247, 233, 210, 1) 52%, rgba(101, 25, 33, 1) 52%, rgba(101, 25, 33, 1) 56%, rgba(247, 233, 210, 1) 56%, rgba(247, 233, 210, 1) 60%, rgba(240, 181, 46, 1) 60%, rgba(240, 181, 46, 1) 64%, rgba(247, 233, 210, 1) 64%, rgba(247, 233, 210, 1) 68%, rgba(132, 33, 36, 1) 68%, rgba(132, 33, 36, 1) 72%, rgba(247, 233, 210, 1) 72%, rgba(247, 233, 210, 1) 76%, rgba(101, 25, 33, 1) 76%, rgba(101, 25, 33, 1) 80%, rgba(247, 233, 210, 1) 80%, rgba(247, 233, 210, 1) 84%, rgba(240, 181, 46, 1) 84%, rgba(240, 181, 46, 1) 88%, rgba(247, 233, 210, 1) 88%, rgba(247, 233, 210, 1) 92%, rgba(145, 32, 36, 1) 92%, rgba(145, 32, 36, 1) 96%, rgba(247, 233, 210, 1) 96%);
+        }
+        
+        .voucher-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 100%;
+        }
+        
+        .voucher-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+          .voucher-container {
+            padding: 10px;
+          }
+          
+          .voucher-image {
+            width: 100%;
+            max-width: 400px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .voucher-image {
+            max-width: 350px;
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
