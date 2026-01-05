@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'AS Roma Font Test',
-  description: 'AS Roma font demo',
+  title: 'Partner Fonts - Preview & Download',
+  description: 'Preview and download custom fonts including AS Roma and Aquatics',
 };
 
 export default function RootLayout({ children }) {
