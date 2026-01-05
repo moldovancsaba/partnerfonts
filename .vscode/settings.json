@@ -1,0 +1,7 @@
+{
+    "kiroAgent.trustedCommands": [
+        "cp *",
+        "mkdir *",
+        "git *"
+    ]
+}
